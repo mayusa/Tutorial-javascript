@@ -41,12 +41,26 @@ var EventUtil = {
         } else {
             event.cancelBubble = true;
         }
-    }            
+    },
+    //A cross-browser method to get the related element
+     getRelatedTarget: function(event){
+        if (event.relatedTarget){
+            return event.relatedTarget;
+        } else if (event.toElement){
+            return event.toElement;
+        } else if (event.fromElement){
+            return event.fromElement;
+        } else {
+            return null;
+        }    
+    }
+
 };
 
 var btn = document.getElementById("myBtn");
 var handler = function(){
     console.log(event);
 };
+
 // test
 EventUtil.addHandler(btn, "click", handler);
