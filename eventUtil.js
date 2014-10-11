@@ -11,6 +11,20 @@ var EventUtil = {
             element["on" + type] = handler;
         }
     },
+    getEvent: function(event){
+        return event ? event : window.event;
+    },    
+    getTarget: function(event){
+        return event.target || event.srcElement;
+            
+    },    
+    preventDefault: function(event){
+        if (event.preventDefault){
+            event.preventDefault();
+        } else {
+            event.returnValue = false;
+        }
+    },
     // 默认都是采用DOM0级方法        
     removeHandler: function(element, type, handler){
         if (element.removeEventListener){
@@ -20,13 +34,19 @@ var EventUtil = {
         } else {
             element["on" + type] = null;
         }
-    }
-            
+    },
+    stopPropagation: function(event){
+        if (event.stopPropagation){
+            event.stopPropagation();
+        } else {
+            event.cancelBubble = true;
+        }
+    }            
 };
 
 var btn = document.getElementById("myBtn");
 var handler = function(){
     console.log(event);
 };
-
+// test
 EventUtil.addHandler(btn, "click", handler);
