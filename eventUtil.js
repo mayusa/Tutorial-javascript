@@ -73,7 +73,17 @@ var EventUtil = {
                     return 1;
             }
         }
-    }           
+    },
+    // For a cross-browser solution, the first step is to create a method 
+    // that can retrieve a normalized value for the mouse wheel delta
+    getWheelDelta: function(event){
+            if (event.wheelDelta){
+            return (client.engine.opera && client.engine.opera < 9.5 ? 
+                -event.wheelDelta : event.wheelDelta);           
+                    } else {
+            return -event.detail * 40;
+        }
+    }    
 
 };
 
