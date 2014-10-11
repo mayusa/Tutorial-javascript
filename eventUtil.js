@@ -83,7 +83,15 @@ var EventUtil = {
                     } else {
             return -event.detail * 40;
         }
-    }    
+    },
+    //To retrieve the character code in a cross-browser way    
+     getCharCode: function(event){
+         if (typeof event.charCode == "number"){
+             return event.charCode;
+         } else {
+             return event.keyCode;
+         }
+     }
 
 };
 
