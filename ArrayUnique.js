@@ -16,10 +16,12 @@ Array.prototype.unique = function() {
 
 // solution 2: using reduce method
 var arrayUnique = function(a) {
+	//p: previousValue (fist:initArray)
+	//c:currentValue
 	return a.reduce(function(p, c) {
 		if (p.indexOf(c) < 0){ 
 			p.push(c);
 		}
 		return p;
-	}, []);
+	}, []); // []: initArray
 };
