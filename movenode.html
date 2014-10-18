@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>move a node</title>
+	</head>
+    <body>
+    	<ul id="myUl">
+	    	<li>111</li>
+	    	<li>222</li>
+	    	<li>333</li>
+    	</ul>   
+
+		<script>
+			// example: insert/move an existing element.
+			var myUl = document.getElementById("myUl");
+			var li3 = myUl.childNodes[5];
+			var li2 = myUl.childNodes[3];
+			// second parameter,myUl:The child node you want to insert the new node before
+			document.body.insertBefore(li3,myUl);
+
+        </script>
+    </body>
+</html>
