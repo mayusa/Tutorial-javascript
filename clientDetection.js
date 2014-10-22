@@ -62,7 +62,7 @@ var client = function(){
         engine.ver = RegExp["$1"];
         engine.webkit = parseFloat(engine.ver);
         
-        //figure out if it’s Chrome or Safari
+        //figure out if it's Chrome or Safari
         if (/Chrome\/(\S+)/.test(ua)){
             browser.ver = RegExp["$1"];
             browser.chrome = parseFloat(browser.ver);
@@ -91,7 +91,7 @@ var client = function(){
         engine.ver = RegExp["$1"];
         engine.gecko = parseFloat(engine.ver);
         
-        //determine if it’s Firefox
+        //determine if it's Firefox
         if (/Firefox\/(\S+)/.test(ua)){
             browser.ver = RegExp["$1"];
             browser.firefox = parseFloat(browser.ver);
@@ -159,7 +159,7 @@ var client = function(){
         if (/CPU (?:iPhone )?OS (\d+_\d+)/.test(ua)){
             system.ios = parseFloat(RegExp.$1.replace("_", "."));
         } else {
-        	            system.ios = 2;  //can’t really detect - so guess
+        	            system.ios = 2;  //can't really detect - so guess
         }
     }
     

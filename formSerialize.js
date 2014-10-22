@@ -54,7 +54,7 @@ function serialize(form){
                 /* falls through */
                             
             default:
-                //don’t include form fields without names
+                //don't include form fields without names
                 if (field.name.length){
                     parts.push(encodeURIComponent(field.name) + "=" + 
                                encodeURIComponent(field.value));
