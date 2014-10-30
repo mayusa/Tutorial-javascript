@@ -106,11 +106,3 @@ var EventUtil = {
     }
 
 };
-
-var btn = document.getElementById("myBtn");
-var handler = function(){
-    console.log(event);
-};
-
-// test
-EventUtil.addHandler(btn, "click", handler);
