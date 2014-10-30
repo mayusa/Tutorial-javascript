@@ -12,8 +12,7 @@ function createCORSRequest(method, url){
     return xhr;
 }
 
-var request = createCORSRequest("get", 
-    "http://www.somewhere-else-ashu.com/page/");
+var request = createCORSRequest("get", "http://www.somewhere-else-ashu.com/page/");
 if (request){
     request.onload = function(){
         //do something with request.responseText
@@ -30,11 +29,28 @@ if (request){
 
 //JSONP通过动态<script>元素来使用。为src属性指定一个跨域URL
 //JSONP从其他域中加载代码执行
-// callback({ “name”: “Nicholas” });
+// callback({ "name": "Nicholas" });
 function handleResponse(response){
-    console.log("You’re at IP address " + response.ip + ", which is in " + 
+    console.log("You’re at IP address " + response.ip + 
+        ", which is in " + 
           response.city + ", " + response.region_name);
 }
 var script = document.createElement("script");
 script.src = "http://freegeoip.net/json/?callback=handleResponse";
 document.body.insertBefore(script, document.body.firstChild);
+
+// 首先检测是否在线
+if (navigator.onLine){
+    //work as usual
+    console.log("online");
+} else {
+    //perform offline behavior
+    console.log("offline");
+}
+// 然后监测离线和上线
+EventUtil.addHandler(window, "online", function(){
+    alert("Online");
+});
+EventUtil.addHandler(window, "offline", function(){
+    alert("Offline");
+});
