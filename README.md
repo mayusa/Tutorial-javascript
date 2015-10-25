@@ -23,5 +23,5 @@ PLURALSIGHT REACT JS GETTING STARTED TUTORIAL
 Lynda - Up and Running with Backbone.js 2014  
 
 ###5. QA
-http://stackoverflow.com/
+http://stackoverflow.com/    
 http://github.com/
