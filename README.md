@@ -4,12 +4,12 @@
 https://jsbin.com/?html,output  
 http://plnkr.co/edit/?p=catalogue  
 
-###2. 在线学习网站
+###2. 在线学习
 https://www.codecademy.com/tracks/javascript  
 http://www.w3schools.com/js/default.asp  
 https://developer.mozilla.org/en-US/docs/Web/JavaScript  
 
-###3. 学习书
+###3. 学习书籍
  1) Professional JavaScript for Web Developers(JavaScript高级程序设计)  
  2) JavaScript: The Definitive Guide(JavaScript 权威指南 第6版)   
  3) JavaScript: The Good Parts(js语言精粹)   
