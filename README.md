@@ -15,8 +15,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript
  3) JavaScript: The Good Parts(js语言精粹)  
  4) Learning JavaScript Design Patterns () 
  5) DOM Scripting: Web Design with JavaScript and the Document Object Model(JS DOM高级程序设计)  
- [PDF下载1](http://www.ziyonet.uz/uploads/books/50328/53bd0f163ffd7.pdf)   
- [PDF下载2](ftp://91.193.237.1/pub/docs/linux-support/programming/JavaScript/[Apress.%20FriendsofED]%20-%20DOM%20Scripting%20-%20[Keith,%20Sambells].pdf)   
+ [PDF下载](http://www.ziyonet.uz/uploads/books/50328/53bd0f163ffd7.pdf)    
 
 ###4. 视频教程
 Egghead.io Angular JS  
