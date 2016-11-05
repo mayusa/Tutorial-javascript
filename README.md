@@ -28,7 +28,7 @@ http://github.com/
 
 
 ###6. ES6
-入门：http://es6.ruanyifeng.com/
-视频教程 https://laracasts.com/series/es6-cliffsnotes/episodes/1
-CHEATSHEET:  https://github.com/DrkSephy/es6-cheatsheet
-浏览器兼容 http://kangax.github.io/compat-table/es6/
+入门：http://es6.ruanyifeng.com/  
+视频教程 https://laracasts.com/series/es6-cliffsnotes/episodes/1  
+CHEATSHEET:  https://github.com/DrkSephy/es6-cheatsheet  
+浏览器兼容 http://kangax.github.io/compat-table/es6/  
